@@ -417,6 +417,7 @@ async function getLineGraph(options: LineGraphOptions): Promise<GraphResponse> {
   const payload = {
     width: 800,
     height: 400,
+    backgroundColor: 'white',
     chart: chartConfig
   }
 
@@ -502,6 +503,7 @@ async function getStackedAreaGraph(
   const payload = {
     width: 800,
     height: 400,
+    backgroundColor: 'white',
     chart: chartConfig
   }
 
