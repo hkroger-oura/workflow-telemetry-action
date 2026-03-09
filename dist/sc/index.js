@@ -28639,6 +28639,7 @@ function getLineGraph(options) {
         const payload = {
             width: 800,
             height: 400,
+            backgroundColor: 'white',
             chart: chartConfig
         };
         let response = null;
@@ -28720,6 +28721,7 @@ function getStackedAreaGraph(options) {
         const payload = {
             width: 800,
             height: 400,
+            backgroundColor: 'white',
             chart: chartConfig
         };
         let response = null;
