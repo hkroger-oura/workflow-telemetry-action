@@ -44939,7 +44939,8 @@ function triggerStatCollect() {
 function reportWorkflowMetrics() {
     return __awaiter(this, void 0, void 0, function* () {
         const theme = core.getInput('theme', { required: false });
-        let axisColor = BLACK;
+        // let axisColor = BLACK
+        let axisColor = '#777777';
         switch (theme) {
             case 'light':
                 axisColor = BLACK;
@@ -45257,6 +45258,7 @@ function getLineGraph(options) {
         const payload = {
             width: 800,
             height: 400,
+            backgroundColor: 'white',
             chart: chartConfig
         };
         let response = null;
@@ -45338,6 +45340,7 @@ function getStackedAreaGraph(options) {
         const payload = {
             width: 800,
             height: 400,
+            backgroundColor: 'white',
             chart: chartConfig
         };
         let response = null;

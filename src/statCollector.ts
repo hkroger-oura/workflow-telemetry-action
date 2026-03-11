@@ -39,7 +39,8 @@ async function triggerStatCollect(): Promise<void> {
 
 async function reportWorkflowMetrics(): Promise<string> {
   const theme: string = core.getInput('theme', { required: false })
-  let axisColor = BLACK
+  // let axisColor = BLACK
+  let axisColor = '#777777'
   switch (theme) {
     case 'light':
       axisColor = BLACK
